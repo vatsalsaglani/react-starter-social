@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Profile add||edit</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <style>
+        .profile-add-back {
+            /* position: absolute; */
+            height: 100vh;
+            width: 100%;
+        }
+
+        .profile-add-form {
+            position: relative;
+        }
+
+        .box {
+            /* position: relative; */
+            display: flex;
+            align-content: center;
+            justify-content: center;
+
+        }
+
+        .prof-add-form {
+            background-color: aliceblue;
+            border-radius: 5%;
+            padding-top: 70px;
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-bottom: 40px;
+            box-shadow: 0px 4px 4px 0px grey;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <section class="profile-add-back">
+        <div class="uk-container">
+            <div class="profile-add-form uk-align-center">
+                <h1 class="uk-heading-line uk-text-center uk-primary">
+                    <span class="uk-primary" style="color: gray">Profile</span>
+                </h1>
+                <br>
+
+                <div class="box">
+
+                    <form class="log-form">
+
+
+                        <div class="uk-margin">
+                            <div class="uk-inline">
+                                <a class="uk-form-icon" href="#" uk-icon="icon: user"></a>
+                                <input class="uk-input uk-form-width-large uk-visible@m" type="text" placeholder="Handle">
+                                <input class="uk-input uk-hidden@m" type="text" placeholder="Handle">
+
+                            </div>
+                        </div>
+
+                        <div class="uk-margin">
+                            <div class="uk-inline">
+                                <a class="uk-form-icon" href="#" uk-icon="icon: bookmark"></a>
+                                <input class="uk-input uk-form-width-large uk-visible@m" type="text" placeholder="Company">
+                                <input class="uk-input uk-hidden@m" type="text" placeholder="Company">
+
+                            </div>
+                        </div>
+
+                        <div class="uk-margin">
+                            <div class="uk-inline">
+                                <a class="uk-form-icon" href="#" uk-icon="icon: link"></a>
+                                <input class="uk-input uk-form-width-large uk-visible@m" type="text" placeholder="Website">
+                                <input class="uk-input uk-hidden@m" type="text" placeholder="Website">
+
+                            </div>
+                        </div>
+
+                        <div class="uk-margin">
+                            <div class="uk-inline">
+                                <a class="uk-form-icon" href="#" uk-icon="icon: location"></a>
+                                <input class="uk-input uk-form-width-large uk-visible@m" type="text" placeholder="Location">
+                                <input class="uk-input uk-hidden@m" type="text" placeholder="Location">
+
+                            </div>
+                        </div>
+
+                        <!-- <div class="uk-margin">
+                            <div class="uk-inline">
+                                <a class="uk-form-icon" href="#" uk-icon="icon: plus"></a>
+                                <input class="uk-input uk-form-width-large uk-visible@m" type="text" placeholder="Status">
+                                <input class="uk-input uk-hidden@m" type="text" placeholder="Status">
+
+                            </div>
+                        </div> -->
+                        <div class="uk-margin">
+                            <div uk-form-custom="target: > * > span:last-child">
+                                <select>
+                                    <option value="1">Student</option>
+                                    <option value="2">Developer</option>
+                                    <option value="3">Freelancer</option>
+                                    <option value="4">Other</option>
+                                </select>
+                                <span class="uk-link">
+                                    <span uk-icon="icon: plus"></span>
+                                    <span></span>
+                                </span>
+                            </div>
+                        </div>
+
+
+
+                        <div class="uk-margin">
+                            <div class="uk-inline">
+                                <a class="uk-form-icon" href="#" uk-icon="icon: cart"></a>
+                                <input class="uk-input uk-form-width-large uk-visible@m uk-visible@m" type="text" placeholder="Skills">
+                                <input class="uk-input uk-hidden@m" type="text" placeholder="Skills">
+
+                            </div>
+                        </div>
+
+                        <div class="uk-margin">
+                            <div class="uk-inline">
+                                <a class="uk-form-icon" href="#" uk-icon="icon: github"></a>
+                                <input class="uk-input uk-form-width-large uk-visible@m" type="text" placeholder="Github Username">
+                                <input class="uk-input uk-hidden@m" type="text" placeholder="Github Username">
+
+                            </div>
+                        </div>
+
+                        <div class="uk-margin">
+                            <div class="uk-inline">
+                                <a class="uk-form-icon" href="#" uk-icon="icon: youtube"></a>
+                                <input class="uk-input uk-form-width-large uk-visible@m" type="text" placeholder="YouTube">
+                                <input class="uk-input uk-hidden@m" type="text" placeholder="YouTube">
+
+                            </div>
+                        </div>
+
+                        <div class="uk-margin">
+                            <div class="uk-inline">
+                                <a class="uk-form-icon" href="#" uk-icon="icon: twitter"></a>
+                                <input class="uk-input uk-form-width-large uk-visible@m" type="text" placeholder="Twitter">
+                                <input class="uk-input uk-hidden@m" type="text" placeholder="Twitter">
+
+                            </div>
+                        </div>
+
+                        <div class="uk-margin">
+                            <div class="uk-inline">
+                                <a class="uk-form-icon" href="#" uk-icon="icon: linkedin"></a>
+                                <input class="uk-input uk-form-width-large uk-visible@m" type="text" placeholder="LinkedIn">
+                                <input class="uk-input uk-hidden@m" type="text" placeholder="LinkedIn">
+
+                            </div>
+                        </div>
+
+                        <div class="uk-margin">
+                            <div class="uk-inline">
+                                <a class="uk-form-icon" href="#" uk-icon="icon: facebook"></a>
+                                <input class="uk-input uk-form-width-large uk-visible@m" type="text" placeholder="Facebook">
+                                <input class="uk-input uk-hidden@m" type="text" placeholder="Facebook">
+
+                            </div>
+                        </div>
+
+                        <div class="uk-margin">
+                            <div class="uk-inline">
+                                <a class="uk-form-icon" href="#" uk-icon="icon: instagram"></a>
+                                <input class="uk-input uk-form-width-large uk-visible@m" type="text" placeholder="Instagram">
+                                <input class="uk-input uk-hidden@m" type="text" placeholder="Instagram">
+
+                            </div>
+                        </div>
+
+                        <div class="uk-margin">
+                            <div class="uk-inline">
+                                <a href="#" class="uk-form-icon" uk-icon="icon: quote-right"></a>
+                                <textarea class="uk-textarea" rows="5" placeholder="Bio"></textarea>
+                            </div>
+                        </div>
+
+
+
+
+                        <button class="uk-hover uk-button uk-button-primary uk-width-1-2 uk-margin-small-bottom" style=" color: white"
+                            type="submit">Submit</button>
+                        <br>
+
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <style>
+        .login-back {
+            /* position: absolute; */
+            height: 100vh;
+            width: 100%;
+        }
+
+        .login-form {
+            position: relative;
+            top: 25vh;
+        }
+
+        .box {
+            /* position: relative; */
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            
+        }
+
+        .log-form {
+            background-color: aliceblue;
+            border-radius: 5%;
+            padding-top: 70px;
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-bottom: 40px;
+            box-shadow: 0px 4px 4px 0px grey;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="login-back">
+        <div class="uk-container uk-container-small">
+            <div class="login-form uk-align-center">
+                    <h1 class="uk-heading-line uk-text-center uk-primary"><span class="uk-primary" style="color: gray">LogIn</span></h1> <br>
+
+                <div class="box">
+
+                    <form class="log-form">
+
+
+                        <div class="uk-margin">
+                            <div class="uk-inline">
+                                <a class="uk-form-icon" href="#" uk-icon="icon: mail"></a>
+                                <input class="uk-input" type="text" placeholder="Email">
+                            </div>
+                        </div>
+
+                        <div class="uk-margin">
+                            <div class="uk-inline">
+                                <a class="uk-form-icon" href="#" uk-icon="icon: lock"></a>
+                                <input class="uk-input" type="password" placeholder="Password">
+                            </div>
+                        </div>
+                        <button class="uk-hover uk-button uk-width-1-2 uk-margin-small-bottom" style="background-color: lightsteelblue; color: white" type="submit">LogIn</button>
+                        <br>
+                        <p class="uk-text-center">Don't have an account? <a href="register.html" class="uk-link-heading">Register Here!</a></p>
+                        
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
